@@ -41,12 +41,14 @@ const clients = [
   { id: 7, name: "Webflow" }, { id: 8, name: "Loom" }, { id: 9, name: "Framer" },
   { id: 10, name: "Supabase" }, { id: 11, name: "Raycast" }, { id: 12, name: "Arc" },
 ];
+
 const services = [
   { id: 1, icon: "FiCode", title: "Web Development", description: "We craft blazing-fast, pixel-perfect websites and web applications using modern stacks — React, Next.js, and beyond.", features: ["React / Next.js", "Performance Optimized", "CMS Integration"], color: "#FFCB05" },
   { id: 2, icon: "FiSmartphone", title: "App Development", description: "Native and cross-platform mobile experiences that users love — built with React Native and Flutter for iOS and Android.", features: ["React Native", "Flutter", "iOS & Android"], color: "#A78BFA" },
   { id: 3, icon: "FiTrendingUp", title: "SEO Optimization", description: "Data-driven SEO strategies that put your brand at the top of search results and keep you ahead of the competition.", features: ["Technical SEO", "Content Strategy", "Analytics & Reporting"], color: "#34D399" },
   { id: 4, icon: "FiFeather", title: "Brand Design", description: "Bold, strategic brand identities that resonate with your audience and make a lasting impression across every touchpoint.", features: ["Logo & Identity", "Design Systems", "Motion & UI"], color: "#F472B6" },
 ];
+
 const portfolioProjects = [
   { id: 1, title: "Luminary Finance", category: "Web Development", description: "A next-gen fintech dashboard with real-time analytics and AI-powered insights.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80", tags: ["React", "Node.js", "PostgreSQL"], year: "2026" },
   { id: 2, title: "Orbis App", category: "App Development", description: "A social productivity app connecting remote teams across time zones seamlessly.", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80", tags: ["React Native", "Firebase"], year: "2026" },

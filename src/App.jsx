@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Navbar from './components/Nav'
 import Hero from './components/Hero';
 import ClientsMarquee from './components/ClientsMarquee';
+import Services from './components/Services';
 
 
 
@@ -12,6 +13,7 @@ export default function App() {
       <Navbar />
       <Hero/>
       <ClientsMarquee/>
+      <Services/>
 
     </div>
   );

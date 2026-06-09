@@ -37,3 +37,10 @@ export const clients = [
   { id: 11, name: "Samsung" },
   { id: 12, name: "NVIDIA" },
 ];
+
+export const services = [
+  { id: 1, icon: "FiCode", title: "Web Development", description: "We craft blazing-fast, pixel-perfect websites and web applications using modern stacks — React, Next.js, and beyond.", features: ["React / Next.js", "Performance Optimized", "CMS Integration"], color: "#FFCB05" },
+  { id: 2, icon: "FiSmartphone", title: "App Development", description: "Native and cross-platform mobile experiences that users love — built with React Native and Flutter for iOS and Android.", features: ["React Native", "Flutter", "iOS & Android"], color: "#A78BFA" },
+  { id: 3, icon: "FiTrendingUp", title: "SEO Optimization", description: "Data-driven SEO strategies that put your brand at the top of search results and keep you ahead of the competition.", features: ["Technical SEO", "Content Strategy", "Analytics & Reporting"], color: "#34D399" },
+  { id: 4, icon: "FiFeather", title: "Brand Design", description: "Bold, strategic brand identities that resonate with your audience and make a lasting impression across every touchpoint.", features: ["Logo & Identity", "Design Systems", "Motion & UI"], color: "#F472B6" },
+];
