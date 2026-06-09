@@ -22,3 +22,18 @@ export const heroContent = {
     { value: "40+", label: "Team Members" },
   ],
 };
+
+export const clients = [
+  { id: 1, name: "Google" },
+  { id: 2, name: "Microsoft" },
+  { id: 3, name: "Apple" },
+  { id: 4, name: "Amazon" },
+  { id: 5, name: "Meta" },
+  { id: 6, name: "Netflix" },
+  { id: 7, name: "Adobe" },
+  { id: 8, name: "Spotify" },
+  { id: 9, name: "Airbnb" },
+  { id: 10, name: "Tesla" },
+  { id: 11, name: "Samsung" },
+  { id: 12, name: "NVIDIA" },
+];
