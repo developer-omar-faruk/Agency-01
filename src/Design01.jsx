@@ -19,6 +19,7 @@ const navLinks = [
   { id: "faq", label: "FAQ" },
   { id: "contact", label: "Contact" },
 ];
+
 const heroContent = {
   badge: "🚀 Premium Digital Agency",
   headingLine1: "We Build",

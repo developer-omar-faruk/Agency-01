@@ -36,7 +36,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-black text-white cursor-pointer"
         >
-          Tab<span className="text-[#FFCB05]">Serv</span>
+          <a href="#Hero">Tab<span className="text-[#FFCB05]">Serv</span></a>
         </motion.div>
 
         <ul className="hidden md:flex items-center gap-8">
