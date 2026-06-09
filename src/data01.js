@@ -44,3 +44,64 @@ export const services = [
   { id: 3, icon: "FiTrendingUp", title: "SEO Optimization", description: "Data-driven SEO strategies that put your brand at the top of search results and keep you ahead of the competition.", features: ["Technical SEO", "Content Strategy", "Analytics & Reporting"], color: "#34D399" },
   { id: 4, icon: "FiFeather", title: "Brand Design", description: "Bold, strategic brand identities that resonate with your audience and make a lasting impression across every touchpoint.", features: ["Logo & Identity", "Design Systems", "Motion & UI"], color: "#F472B6" },
 ];
+
+// Portfolio Projects
+export const projects = [
+  {
+    id: 1,
+    name: "Luminary Finance",
+    category: "Web",
+    description: "A premium fintech dashboard with real-time analytics and AI-powered insights.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    year: "2026",
+  },
+  {
+    id: 2,
+    name: "Orbita Social",
+    category: "Mobile",
+    description: "A next-generation social networking app with immersive AR features.",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+    tags: ["React Native", "GraphQL", "Firebase"],
+    year: "2026",
+  },
+  {
+    id: 3,
+    name: "Velour Studio",
+    category: "Branding",
+    description: "A luxury fashion brand identity crafted for the modern creative market.",
+    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&q=80",
+    tags: ["Brand Identity", "Motion", "Figma"],
+    year: "2026",
+  },
+  {
+    id: 4,
+    name: "Zenith Commerce",
+    category: "Web",
+    description: "A high-converting e-commerce platform built for scale and speed.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+    tags: ["Shopify", "React", "SEO"],
+    year: "2026",
+  },
+  {
+    id: 5,
+    name: "Pulsera Health",
+    category: "SEO",
+    description: "A comprehensive SEO strategy that tripled organic traffic in 90 days.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    tags: ["SEO", "Analytics", "Content"],
+    year: "2026",
+  },
+  {
+    id: 6,
+    name: "Aeris Rides",
+    category: "Mobile",
+    description: "A sleek ride-sharing app with real-time GPS tracking and in-app payments.",
+    image: "https://images.unsplash.com/photo-1471440671318-55bdbb772f93?w=800&q=80",
+    tags: ["Flutter", "Maps API", "Stripe"],
+    year: "2026",
+  },
+];
+
+// Portfolio Categories
+export const portfolioCategories = ["All", "Web", "Mobile", "Branding", "SEO"];

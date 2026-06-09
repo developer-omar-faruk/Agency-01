@@ -3,6 +3,7 @@ import Navbar from './components/Nav'
 import Hero from './components/Hero';
 import ClientsMarquee from './components/ClientsMarquee';
 import Services from './components/Services';
+import Portfolio from './components/Portfolio';
 
 
 
@@ -14,6 +15,7 @@ export default function App() {
       <Hero/>
       <ClientsMarquee/>
       <Services/>
+      <Portfolio/>
 
     </div>
   );
