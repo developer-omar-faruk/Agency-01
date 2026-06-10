@@ -5,6 +5,7 @@ import ClientsMarquee from './components/ClientsMarquee';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Process from './components/Process';
+import Testimonials from './components/Testimonials';
 
 
 
@@ -18,6 +19,7 @@ export default function App() {
       <Services/>
       <Portfolio/>
       <Process/>
+      <Testimonials/>
 
     </div>
   );

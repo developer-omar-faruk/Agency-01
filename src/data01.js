@@ -158,3 +158,58 @@ export const processSteps = [
     icon: "FiTrendingUp",
   },
 ];
+
+
+// Testimonials
+export const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Chen",
+    role: "CEO, Luminary Finance",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    rating: 5,
+    review:
+      "TabTech completely transformed our digital presence. The website they built for us increased conversions by 340% within the first month. Absolutely world-class team.",
+    company: "Luminary Finance",
+  },
+  {
+    id: 2,
+    name: "Marcus Rivera",
+    role: "Founder, Orbita Social",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    rating: 5,
+    review:
+      "From strategy to launch, the TabTech team was exceptional. Our app exceeded 100K downloads in 3 months. Their attention to detail and creativity is unmatched.",
+    company: "Orbita Social",
+  },
+  {
+    id: 3,
+    name: "Priya Kapoor",
+    role: "CMO, Zenith Commerce",
+    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    rating: 5,
+    review:
+      "The SEO work TabTech did for us was phenomenal. Organic traffic tripled, and our search rankings skyrocketed. Best investment we've ever made.",
+    company: "Zenith Commerce",
+  },
+  {
+    id: 4,
+    name: "James Whitfield",
+    role: "Creative Director, Velour Studio",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    rating: 5,
+    review:
+      "The brand identity TabTech created for us is stunning. It perfectly captures our vision and has received incredible feedback from clients and industry peers alike.",
+    company: "Velour Studio",
+  },
+  {
+    id: 5,
+    name: "Amara Osei",
+    role: "CTO, Pulsera Health",
+    avatar: "https://randomuser.me/api/portraits/women/12.jpg",
+    rating: 5,
+    review:
+      "TabTech delivered a technically flawless platform on time and within budget. Their development team is top-tier — we'll be working with them for years to come.",
+    company: "Pulsera Health",
+  },
+];
