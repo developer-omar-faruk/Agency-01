@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import ClientsMarquee from './components/ClientsMarquee';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import Process from './components/Process';
 
 
 
@@ -16,6 +17,7 @@ export default function App() {
       <ClientsMarquee/>
       <Services/>
       <Portfolio/>
+      <Process/>
 
     </div>
   );

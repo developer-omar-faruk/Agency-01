@@ -105,3 +105,56 @@ export const projects = [
 
 // Portfolio Categories
 export const portfolioCategories = ["All", "Web", "Mobile", "Branding", "SEO"];
+
+
+// Process Steps
+export const processSteps = [
+  {
+    id: 1,
+    step: "01",
+    title: "Discovery",
+    description:
+      "We dive deep into your business, audience, and goals through structured discovery sessions to build a clear strategic foundation.",
+    icon: "FiSearch",
+  },
+  {
+    id: 2,
+    step: "02",
+    title: "Strategy",
+    description:
+      "We craft a data-backed roadmap — market research, competitor analysis, and a tailored action plan for measurable growth.",
+    icon: "FiTarget",
+  },
+  {
+    id: 3,
+    step: "03",
+    title: "Design",
+    description:
+      "Our designers create stunning, user-centric interfaces — wireframes to high-fidelity prototypes that captivate and convert.",
+    icon: "FiPenTool",
+  },
+  {
+    id: 4,
+    step: "04",
+    title: "Development",
+    description:
+      "We build with precision — clean code, modern frameworks, and performance-first architecture for a flawless product.",
+    icon: "FiCode",
+  },
+  {
+    id: 5,
+    step: "05",
+    title: "Launch",
+    description:
+      "Rigorous QA, testing, and deployment pipelines ensure a smooth launch — your product hits the market polished and ready.",
+    icon: "FiZap",
+  },
+  {
+    id: 6,
+    step: "06",
+    title: "Growth",
+    description:
+      "Post-launch, we monitor performance, iterate based on data, and scale your product to continuously reach new heights.",
+    icon: "FiTrendingUp",
+  },
+];

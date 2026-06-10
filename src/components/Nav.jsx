@@ -85,6 +85,7 @@ const Navbar = () => {
             <ul className="flex flex-col p-6 gap-5">
               {navLinks.map((l) => (
                 <li key={l.id}>
+                  {/* href={`#${l.id}`} */}
                   <button
                     onClick={() => go(l.id)}
                     className="text-base font-medium text-[#A1A1AA] hover:text-[#FFCB05] transition-colors"
