@@ -1,4 +1,5 @@
 import { processSteps } from '../data01';
+import AnimatedSection from './common/AnimatedSection';
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -35,28 +36,6 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 };
 
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
-};
-
-const AnimatedSection = ({ children, className = "", delay = 0 }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={stagger}
-      className={className}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </motion.div>
-  );
-};
 
 const Process = () => {
   return (

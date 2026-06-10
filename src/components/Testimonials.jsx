@@ -1,34 +1,12 @@
 import { testimonials } from '../data01';
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import AnimatedSection from './common/AnimatedSection';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FiStar, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
-};
-
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
-};
-
-const AnimatedSection = ({ children, className = "", delay = 0 }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={stagger}
-      className={className}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </motion.div>
-  );
 };
 
 const Testimonials = () => {
@@ -101,7 +79,7 @@ const Testimonials = () => {
                   "{testimonials[current].review}"
                 </p>
 
-                {/* Author */}
+                {/* Author Info */}
                 <div className="flex items-center gap-4">
                   <img
                     src={testimonials[current].avatar}
@@ -140,7 +118,9 @@ const Testimonials = () => {
                     setDirection(i > current ? 1 : -1);
                     setCurrent(i);
                   }}
-                  className={`h-2 rounded-full transition-all duration-300 ${i === current ? "w-8 bg-[#FFCB05]" : "w-2 bg-white/20"}`}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    i === current ? "w-8 bg-[#FFCB05]" : "w-2 bg-white/20"
+                  }`}
                 />
               ))}
             </div>
