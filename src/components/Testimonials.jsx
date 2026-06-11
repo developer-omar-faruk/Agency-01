@@ -1,13 +1,9 @@
-import { testimonials } from '../data01';
+import { testimonials, fadeUp } from '../data01';
 import AnimatedSection from './common/AnimatedSection';
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiStar, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
-};
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);

@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Process from './components/Process';
 import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 
 
 
@@ -20,6 +21,7 @@ export default function App() {
       <Portfolio/>
       <Process/>
       <Testimonials/>
+      <FAQ/>
 
     </div>
   );

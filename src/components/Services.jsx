@@ -1,6 +1,6 @@
-import { services } from '../data01';
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { services, fadeUp } from '../data01';
+import SW from './common/SectionWraper';
+import { motion } from "framer-motion";
 import {
   FiCode, FiSmartphone, FiTrendingUp,
   FiFeather, FiSearch, FiTarget,
@@ -17,22 +17,6 @@ const Icon = ({ name, ...props }) => {
   return Component ? <Component {...props} /> : null;
 };
 
-// ─────────────────────────────────────────────
-// Motion Variants
-// ─────────────────────────────────────────────
-const fadeUp = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
-  },
-};
-
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
-};
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.85 },
@@ -41,27 +25,6 @@ const scaleIn = {
     scale: 1,
     transition: { duration: 0.6, ease: "easeOut" },
   },
-};
-
-// ─────────────────────────────────────────────
-// Section Wrapper with Scroll Animation
-// ─────────────────────────────────────────────
-const SW = ({ children, id, className = "" }) => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
-
-  return (
-    <motion.section
-      id={id}
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={stagger}
-      className={className}
-    >
-      {children}
-    </motion.section>
-  );
 };
 
 // ─────────────────────────────────────────────

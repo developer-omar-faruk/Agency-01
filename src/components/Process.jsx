@@ -1,4 +1,4 @@
-import { processSteps } from '../data01';
+import { processSteps, fadeUp } from '../data01';
 import AnimatedSection from './common/AnimatedSection';
 
 import { useRef } from "react";
@@ -29,11 +29,6 @@ const iconMap = {
 const getIcon = (name, props = {}) => {
   const Icon = iconMap[name];
   return Icon ? <Icon {...props} /> : null;
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 };
 
 

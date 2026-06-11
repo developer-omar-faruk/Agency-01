@@ -1,3 +1,11 @@
+// Motion Variants
+export const fadeUp = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+};
+
+
+
 export const navLinks = [
   { id: "services", label: "Services" },
   { id: "portfolio", label: "Portfolio" },
@@ -212,4 +220,15 @@ export const testimonials = [
       "TabTech delivered a technically flawless platform on time and within budget. Their development team is top-tier — we'll be working with them for years to come.",
     company: "Pulsera Health",
   },
+];
+
+
+// FAQ
+export const faqs = [
+  { id: 1, question: "How long does a typical project take?", answer: "Project timelines vary based on scope. A landing page typically takes 2–3 weeks, a full web application 6–12 weeks, and a complete brand identity 3–5 weeks. We provide detailed timelines during the discovery phase." },
+  { id: 2, question: "What is your pricing model?", answer: "We offer both project-based and retainer pricing. Projects are scoped and quoted individually based on complexity. Retainer plans start at $3,500/month and include ongoing development, design, and strategy support." },
+  { id: 3, question: "Do you work with startups or only enterprise clients?", answer: "We work with clients of all sizes — from early-stage startups to Fortune 500 companies. What matters most is alignment on vision and commitment to quality." },
+  { id: 4, question: "What technologies do you specialize in?", answer: "Our core stack includes React, Next.js, Node.js, React Native, Flutter, TypeScript, PostgreSQL, and Supabase. We stay current and choose the best tools for each project." },
+  { id: 5, question: "Do you provide post-launch support?", answer: "Absolutely. All projects include a 30-day warranty period post-launch. We also offer ongoing support and maintenance retainers to keep your product running optimally." },
+  { id: 6, question: "Can you work with our existing team?", answer: "Yes. We frequently embed with existing engineering or design teams as a collaborative extension. We adapt to your workflows, tools, and communication preferences seamlessly." },
 ];
