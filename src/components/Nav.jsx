@@ -17,9 +17,16 @@ const Navbar = () => {
   }, []);
 
   const go = (id) => {
+   setActive(id);
+
+   setTimeout(() => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    }, 100);
+
     setMenuOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setActive(id);
   };
 
   return (
@@ -36,7 +43,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-black text-white cursor-pointer"
         >
-          <a href="#Hero">Tab<span className="text-[#FFCB05]">Serv</span></a>
+          <a href="#Hero">Tab<span className="text-[#FFCB05]">Tech</span></a>
         </motion.div>
 
         <ul className="hidden md:flex items-center gap-8">
