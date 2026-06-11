@@ -1,4 +1,4 @@
-import { services, fadeUp } from '../data01';
+import { services, fadeUp,scaleIn } from '../data01';
 import SW from './common/SectionWraper';
 import { motion } from "framer-motion";
 import {
@@ -17,15 +17,6 @@ const Icon = ({ name, ...props }) => {
   return Component ? <Component {...props} /> : null;
 };
 
-
-const scaleIn = {
-  hidden: { opacity: 0, scale: 0.85 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
 
 // ─────────────────────────────────────────────
 // Main Services Component

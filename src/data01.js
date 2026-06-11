@@ -1,10 +1,23 @@
-// Motion Variants
+/* ========================================
+   ANIMATION VARIANTS
+   Reusable Framer Motion variants
+   ======================================== */
 export const fadeUp = {
   hidden: { opacity: 0, y: 60 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 };
 
+export const scaleIn = {
+  hidden: { opacity: 0, scale: 0.85 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
+
+// Main Data
 
 export const navLinks = [
   { id: "services", label: "Services" },
@@ -231,4 +244,36 @@ export const faqs = [
   { id: 4, question: "What technologies do you specialize in?", answer: "Our core stack includes React, Next.js, Node.js, React Native, Flutter, TypeScript, PostgreSQL, and Supabase. We stay current and choose the best tools for each project." },
   { id: 5, question: "Do you provide post-launch support?", answer: "Absolutely. All projects include a 30-day warranty period post-launch. We also offer ongoing support and maintenance retainers to keep your product running optimally." },
   { id: 6, question: "Can you work with our existing team?", answer: "Yes. We frequently embed with existing engineering or design teams as a collaborative extension. We adapt to your workflows, tools, and communication preferences seamlessly." },
+];
+
+//.........FORM........
+// Contact Info
+export const contactInfo = {
+  email: "hello@tabtech.agency",
+  phone: "+1 (415) 890-2340",
+  address: "340 Pine Street, Suite 800, San Francisco, CA 94104",
+  formServices: [
+    "Web Development",
+    "App Development",
+    "SEO Optimization",
+    "Brand Design",
+    "Full Package",
+    "Other",
+  ],
+  budgets: [
+    "$5K – $10K",
+    "$10K – $25K",
+    "$25K – $50K",
+    "$50K – $100K",
+    "$100K+",
+  ],
+};
+
+// Social Media Links
+export const socialLinks = [
+  { id: 1, name: "Twitter", icon: "FiTwitter", href: "#" },
+  { id: 2, name: "LinkedIn", icon: "FiLinkedin", href: "#" },
+  { id: 3, name: "Instagram", icon: "FiInstagram", href: "#" },
+  { id: 4, name: "GitHub", icon: "FiGithub", href: "#" },
+  { id: 5, name: "Dribbble", icon: "FiDribbble", href: "#" },
 ];
