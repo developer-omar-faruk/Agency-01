@@ -1,4 +1,4 @@
-import { faqs, fadeUp } from "../data01.js";
+import { faqs, fadeUp } from "../data.js";
 import SW from "./common/SectionWraper.jsx";
 
 import { useState } from "react";

@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import { projects, portfolioCategories } from '../data01';
+import { projects, portfolioCategories } from '../data';
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");

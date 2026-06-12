@@ -1,4 +1,4 @@
-import { navLinks } from '../data01.js';
+import { navLinks } from '../data.js';
 import { useState, useEffect } from 'react';
 
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";

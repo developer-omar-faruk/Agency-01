@@ -1,10 +1,25 @@
 /* ========================================
-   DATA FILE - ALL WEBSITE CONTENT
+   ANIMATION VARIANTS
+   Reusable Framer Motion variants
    ======================================== */
+export const fadeUp = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+};
 
-// Navigation Links
+export const scaleIn = {
+  hidden: { opacity: 0, scale: 0.85 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+
+// Main Data
+
 export const navLinks = [
-  { id: "home", label: "Home" },
   { id: "services", label: "Services" },
   { id: "portfolio", label: "Portfolio" },
   { id: "process", label: "Process" },
@@ -13,73 +28,42 @@ export const navLinks = [
   { id: "contact", label: "Contact" },
 ];
 
-// Hero Content
 export const heroContent = {
-  badge: "🚀 Award-Winning Digital Agency",
-  heading: ["Building Digital", "Experiences That", "Grow Brands"],
-  description:
-    "We craft premium digital products — from blazing-fast websites to powerful mobile apps and unforgettable brand identities that convert visitors into loyal customers.",
-  primaryCTA: { label: "Start a Project", href: "#contact" },
-  secondaryCTA: { label: "View Our Work", href: "#portfolio" },
+  badge: "🚀 Premium Digital Agency",
+  headingLine1: "We Build",
+  headingLine2: "Digital",
+  headingLine3: "Experiences",
+  description: "Bringing together strategy, creativity, and technology to build digital products and campaigns that make our clients look extraordinary.",
+  primaryCTA: { label: "Start a Project" },
+  secondaryCTA: { label: "View Our Work" },
+  stats: [
+    { value: "150+", label: "Projects Done" },
+    { value: "98%", label: "Client Satisfaction" },
+    { value: "12+", label: "Years Experience" },
+    { value: "40+", label: "Team Members" },
+  ],
 };
 
-// Clients
 export const clients = [
-  "Google",
-  "Meta",
-  "Adobe",
-  "Shopify",
-  "Slack",
-  "Stripe",
-  "Figma",
-  "Airbnb",
-  "HubSpot",
-  "Notion",
-  "Vercel",
-  "Linear",
-  "Loom",
-  "Pitch",
-  "Webflow",
+  { id: 1, name: "Google" },
+  { id: 2, name: "Microsoft" },
+  { id: 3, name: "Apple" },
+  { id: 4, name: "Amazon" },
+  { id: 5, name: "Meta" },
+  { id: 6, name: "Netflix" },
+  { id: 7, name: "Adobe" },
+  { id: 8, name: "Spotify" },
+  { id: 9, name: "Airbnb" },
+  { id: 10, name: "Tesla" },
+  { id: 11, name: "Samsung" },
+  { id: 12, name: "NVIDIA" },
 ];
 
-// Services
 export const services = [
-  {
-    id: 1,
-    icon: "FiCode",
-    title: "Web Development",
-    description:
-      "We build lightning-fast, scalable web applications using the latest technologies — React, Next.js, Node.js — crafted for performance and conversion.",
-    features: ["React / Next.js", "API Integration", "CMS Development"],
-    color: "#FFCB05",
-  },
-  {
-    id: 2,
-    icon: "FiSmartphone",
-    title: "App Development",
-    description:
-      "Native and cross-platform mobile applications that deliver seamless user experiences across iOS and Android with intuitive design.",
-    features: ["iOS & Android", "React Native", "Flutter"],
-    color: "#A78BFA",
-  },
-  {
-    id: 3,
-    icon: "FiTrendingUp",
-    title: "SEO Optimization",
-    description:
-      "Data-driven SEO strategies that skyrocket your rankings, increase organic traffic, and turn search engines into your most powerful growth engine.",
-    features: ["Technical SEO", "Content Strategy", "Analytics"],
-    color: "#34D399",
-  },
-  {
-    id: 4,
-    icon: "FiLayers",
-    title: "Brand Design",
-    description:
-      "Distinctive brand identities that resonate emotionally — from logo design and visual systems to full brand guidelines and motion design.",
-    features: ["Logo Design", "Brand Guidelines", "UI/UX Design"],
-    color: "#F472B6",
-  },
+  { id: 1, icon: "FiCode", title: "Web Development", description: "We craft blazing-fast, pixel-perfect websites and web applications using modern stacks — React, Next.js, and beyond.", features: ["React / Next.js", "Performance Optimized", "CMS Integration"], color: "#FFCB05" },
+  { id: 2, icon: "FiSmartphone", title: "App Development", description: "Native and cross-platform mobile experiences that users love — built with React Native and Flutter for iOS and Android.", features: ["React Native", "Flutter", "iOS & Android"], color: "#A78BFA" },
+  { id: 3, icon: "FiTrendingUp", title: "SEO Optimization", description: "Data-driven SEO strategies that put your brand at the top of search results and keep you ahead of the competition.", features: ["Technical SEO", "Content Strategy", "Analytics & Reporting"], color: "#34D399" },
+  { id: 4, icon: "FiFeather", title: "Brand Design", description: "Bold, strategic brand identities that resonate with your audience and make a lasting impression across every touchpoint.", features: ["Logo & Identity", "Design Systems", "Motion & UI"], color: "#F472B6" },
 ];
 
 // Portfolio Projects
@@ -143,6 +127,7 @@ export const projects = [
 // Portfolio Categories
 export const portfolioCategories = ["All", "Web", "Mobile", "Branding", "SEO"];
 
+
 // Process Steps
 export const processSteps = [
   {
@@ -194,6 +179,7 @@ export const processSteps = [
     icon: "FiTrendingUp",
   },
 ];
+
 
 // Testimonials
 export const testimonials = [
@@ -249,51 +235,23 @@ export const testimonials = [
   },
 ];
 
+
 // FAQ
 export const faqs = [
-  {
-    id: 1,
-    question: "What types of web development services do you offer?",
-    answer:
-      "We offer full-stack web development including landing pages, e-commerce stores, SaaS platforms, custom web applications, and CMS-based websites. We work with React, Next.js, Node.js, and more.",
-  },
-  {
-    id: 2,
-    question: "How long does it take to build a website?",
-    answer:
-      "Timelines vary by project scope. A landing page typically takes 1–2 weeks, a full website 4–8 weeks, and complex web applications 8–16+ weeks. We provide detailed timelines during discovery.",
-  },
-  {
-    id: 3,
-    question: "How do you approach SEO optimization?",
-    answer:
-      "Our SEO process includes technical audits, keyword research, on-page optimization, content strategy, link building, and continuous performance monitoring — all data-driven and ROI-focused.",
-  },
-  {
-    id: 4,
-    question: "What is included in your Brand Design service?",
-    answer:
-      "Brand Design includes logo design, color palette, typography system, brand voice guidelines, social media templates, stationery design, and a comprehensive brand style guide.",
-  },
-  {
-    id: 5,
-    question: "How much do your services cost?",
-    answer:
-      "Pricing depends on project complexity and scope. Web projects start from $5,000, mobile apps from $15,000, SEO retainers from $2,000/month, and brand design from $3,500. Contact us for a custom quote.",
-  },
-  {
-    id: 6,
-    question: "Do you offer ongoing support after launch?",
-    answer:
-      "Yes! We offer flexible maintenance and support plans including hosting management, performance monitoring, content updates, security patches, and continuous optimization.",
-  },
+  { id: 1, question: "How long does a typical project take?", answer: "Project timelines vary based on scope. A landing page typically takes 2–3 weeks, a full web application 6–12 weeks, and a complete brand identity 3–5 weeks. We provide detailed timelines during the discovery phase." },
+  { id: 2, question: "What is your pricing model?", answer: "We offer both project-based and retainer pricing. Projects are scoped and quoted individually based on complexity. Retainer plans start at $3,500/month and include ongoing development, design, and strategy support." },
+  { id: 3, question: "Do you work with startups or only enterprise clients?", answer: "We work with clients of all sizes — from early-stage startups to Fortune 500 companies. What matters most is alignment on vision and commitment to quality." },
+  { id: 4, question: "What technologies do you specialize in?", answer: "Our core stack includes React, Next.js, Node.js, React Native, Flutter, TypeScript, PostgreSQL, and Supabase. We stay current and choose the best tools for each project." },
+  { id: 5, question: "Do you provide post-launch support?", answer: "Absolutely. All projects include a 30-day warranty period post-launch. We also offer ongoing support and maintenance retainers to keep your product running optimally." },
+  { id: 6, question: "Can you work with our existing team?", answer: "Yes. We frequently embed with existing engineering or design teams as a collaborative extension. We adapt to your workflows, tools, and communication preferences seamlessly." },
 ];
 
+//.........FORM........
 // Contact Info
 export const contactInfo = {
-  email: "hello@tabtech.agency",
-  phone: "+1 (415) 890-2340",
-  address: "340 Pine Street, Suite 800, San Francisco, CA 94104",
+  email: "mdomarfaruk1045@gmail.com",
+  phone: "+880 1624471890",
+  address: "3651 Gazipur, Faridganj, Chandpur, Bangladesh",
   formServices: [
     "Web Development",
     "App Development",
@@ -314,37 +272,8 @@ export const contactInfo = {
 // Social Media Links
 export const socialLinks = [
   { id: 1, name: "Twitter", icon: "FiTwitter", href: "#" },
-  { id: 2, name: "LinkedIn", icon: "FiLinkedin", href: "#" },
-  { id: 3, name: "Instagram", icon: "FiInstagram", href: "#" },
-  { id: 4, name: "GitHub", icon: "FiGithub", href: "#" },
+  { id: 2, name: "LinkedIn", icon: "FiLinkedin", href: "https://www.linkedin.com/in/omar-faruk-dev/" },
+  { id: 3, name: "Instagram", icon: "FiInstagram", href: "https://web.facebook.com/profile.php?id=100092026849199" },
+  { id: 4, name: "GitHub", icon: "FiGithub", href: "https://github.com/developer-omar-faruk" },
   { id: 5, name: "Dribbble", icon: "FiDribbble", href: "#" },
-];
-
-// Footer Content
-export const footerContent = {
-  logo: "TabTech",
-  tagline: "Building digital experiences that move the world forward.",
-  quickLinks: [
-    { label: "Home", href: "#home" },
-    { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Process", href: "#process" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
-  ],
-  serviceLinks: [
-    { label: "Web Development", href: "#services" },
-    { label: "App Development", href: "#services" },
-    { label: "SEO Optimization", href: "#services" },
-    { label: "Brand Design", href: "#services" },
-  ],
-  copyright: "© 2026 TabTech Agency. All rights reserved.",
-};
-
-// Stats
-export const stats = [
-  { id: 1, value: "150+", label: "Projects Delivered" },
-  { id: 2, value: "98%", label: "Client Satisfaction" },
-  { id: 3, value: "12+", label: "Industry Awards" },
-  { id: 4, value: "8yrs", label: "Industry Experience" },
 ];

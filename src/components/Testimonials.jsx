@@ -1,4 +1,4 @@
-import { testimonials, fadeUp } from '../data01';
+import { testimonials, fadeUp } from '../data';
 import AnimatedSection from './common/AnimatedSection';
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";

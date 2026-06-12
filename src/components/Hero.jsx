@@ -1,4 +1,4 @@
-import { heroContent } from '../data01.js';
+import { heroContent } from '../data.js';
 import { useRef, useMemo, useCallback } from "react";
 
 import { motion, useMotionValue, useSpring } from "framer-motion";

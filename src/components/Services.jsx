@@ -1,4 +1,4 @@
-import { services, fadeUp,scaleIn } from '../data01';
+import { services, fadeUp,scaleIn } from '../data';
 import SW from './common/SectionWraper';
 import { motion } from "framer-motion";
 import {

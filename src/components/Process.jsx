@@ -1,4 +1,4 @@
-import { processSteps, fadeUp } from '../data01';
+import { processSteps, fadeUp } from '../data';
 import AnimatedSection from './common/AnimatedSection';
 
 import { useRef } from "react";

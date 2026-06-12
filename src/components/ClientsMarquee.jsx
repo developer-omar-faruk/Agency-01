@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { clients } from '../data01';
+import { clients } from '../data';
 
 import { 
   FiGlobe, 

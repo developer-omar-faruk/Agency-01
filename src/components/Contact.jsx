@@ -1,4 +1,4 @@
-import {contactInfo,socialLinks, fadeUp,scaleIn} from '../data01'
+import {contactInfo,socialLinks, fadeUp,scaleIn} from '../data'
 import AnimatedSection from './common/AnimatedSection';
 
 import { useState, useCallback } from "react";
